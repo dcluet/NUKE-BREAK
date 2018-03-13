@@ -21,10 +21,10 @@ For more details please refer to our publication.
 **Contributors**
 --
 
-| ![LBMC Logo](src/doc/Logo_LBMC.jpg) ![CNRS Logo](src/doc/Logo_cnrs.jpg) ![ENS Logo](src/doc/Logo_ens.jpg) ||
-|-----------------------------|------------|
-|**CLUET David**|     [david.cluet@ens-lyon.fr](david.cluet@ens-lyon.fr)|
-|**MICHAL Fanny**|     |
+||![CNRS Logo](src/doc/Logo_cnrs.jpg)![LBMC Logo](src/doc/Logo_LBMC.jpg)|![ENS Logo](src/doc/Logo_ens.jpg) |
+|-----------------------------|------------|------------|
+|**CLUET David**|[SIMBIO Team](http://www.ens-lyon.fr/LBMC/equipes/simbio/home?set_language=en&cl=en)|[david.cluet@ens-lyon.fr](david.cluet@ens-lyon.fr)|
+|**MICHAL Fanny**|[EPIGENETIC REGULATION DURING DEVELOPMENT Team](http://www.ens-lyon.fr/LBMC/equipes/EpiDev)     | |
 
 
 **Publication**
@@ -52,7 +52,7 @@ License
 Copyright CNRS 2013
 
 
->This software is a computer program whose purpose is to **automatically identify segments of the cytoplasmic membrane and calculate their radius of curvature**.
+>This software is a computer program whose purpose is to **automatically detect nuclei and DNA damage in Caenorhabditis elegans germline**.
 >
 >This software is governed by the CeCILL  license under French law and abiding
 by the rules of distribution of free software. You can use, modify and/ or
@@ -81,9 +81,8 @@ of the CeCILL license and that you accept its terms.
 
 **Requirements**
 --
-The `FIND_CURVE` macro requires `ImageJ v1.49g` or higher ([Download](https://imagej.nih.gov/ij/download.html)).
+The `NUKE-BREAK` macro requires `ImageJ v1.49g` or higher ([Download](https://imagej.nih.gov/ij/download.html)).
 
-For ImageJ, the conversion of the analyzed stacks into animated GIFs requires the ([Gif-Stack-Writer Plugin](https://imagej.nih.gov/ij/plugins/gif-stack-writer.html)).
 
 
 **Files**
@@ -94,31 +93,34 @@ For ImageJ, the conversion of the analyzed stacks into animated GIFs requires th
     - `Installation.ijm`
     - `Installation_FIJI.ijm`
     - [] **doc**
-        - *3D.jpg*
         - *FIJI.jpg*
-        - *Identification.jpg*
         - *IJ.jpg*
         - *Logo_cnrs.jpg*
         - *Logo_ens.jpg*
         - *Logo_LBMC.jpg*
-        - *Segment.jpg*
-        - *Slice.jpg*
     - [] **macro**
-        - `CleanMemory.java`
-        - `CloseImage.java`
+        - `BreakFinder.java`
+        - `Cleaner.java`
         - `CNRS.jpg`
+        - `createSettings.java`
         - `ENS.jpg`
         - `Explorer.java`
-        - `Find_Curve.java`
-        - `HTML_Curve.html`
+        - `GonadeDetector.java`
+        - `HTML_Nuke.html`
         - `LBMC.jpg`
-        - `macro_AboutPlugin.java`
         - `Main.java`
+        - `NucleiDetector.java`
+        - `openSettings.java`
+        - `Reconstruction.java`
         - `ROIeraser.java`
+        - `Settings.txt`
         - `Startup_CL.txt`
-        - `style_Curve.css`
+        - `Startup_CL2.txt`
+        - `style_Nuke.css`
+        - `Table_Analysis.java`
+        - `Table.java`
         - `tableline.html`
-        - `Trigo.tif`
+        - `Twinkiller.java`
         - `UCBL.jpg`
 
 

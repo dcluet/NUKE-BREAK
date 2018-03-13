@@ -2,7 +2,10 @@ macro "Main"{
 
 requires("1.49t")
 
-version = "1.0d 2016/10/11";
+tag = "v1.0.0"
+lastStableCommit = "07b6a9e7"
+gitlaburl = "http://gitlab.biologie.ens-lyon.fr/dcluet/Nuke-Break"
+
 run("Set Measurements...", "area mean centroid bounding shape display redirect=None decimal=3");
 
 
@@ -20,9 +23,6 @@ run("Set Measurements...", "area mean centroid bounding shape display redirect=N
 2016/22/04	Fixing bug r hyperstack creation x to "+x+"
 2016/05/10  Creation of Excel table to analyse size of foci (Fanny)
 */
-
-
-
 
 //VARIABLES________________________________________________________________________________________________________
 
@@ -46,12 +46,6 @@ TipX = 0;		//X position of the tip
 TipY = 0; 		//Y position of the tip
 
 
-
-
-
-
-
-
 //_________________________________________________________________________________________________________________
 
 //Open ROIManager
@@ -62,14 +56,8 @@ if (Debug==0){
 	setBatchMode(true);
 }
 
-//Legal Hello World
-Dialog.create("Welcome to NUKE-BREAK");
-Dialog.addMessage("Version\n" + version);
-if (Debug==1){
-Dialog.addMessage("WARNING THIS VERSION IS UNDER DEVELOPMENT!\nDEBUG MODE IS ON!");
-}
-Dialog.addMessage("Cluet David\nResearch Ingeneer,PHD\nCNRS, ENS-Lyon, LBMC");
-Dialog.show();
+//Welcome
+Welcome(tag, lastStableCommit, gitlaburl);
 
 Names = retrieveSettingsNames();
 
@@ -797,7 +785,42 @@ runMacro(getDirectory("macros")+File.separator()+"NUKE-BREAK"+File.separator()+"
 //Cleaning Memory
 call("java.lang.System.gc");
 
-waitForUser("ANALYSIS IS OVER");
+myMessage = "<b>Analysis is over!</b>";
+DisplayInfo(myMessage);
+
+/*
+================================================================================
+*/
+
+function Welcome(myTag, myCommit, url){
+showMessage("WELCOME", "<html>"
+        +"<font size=+3>"
+        +"<h1><font color=rgb(77,172,174)>Find Curve Analysis</h1>"
+        +"<font size=+0>"
+        +"<font color=rgb(0,0,0)>"
+        +"<ul>"
+        +"<li>Version: " + myTag + "</li>"
+        +"<li>Last stable commit: " + myCommit + "</li>"
+        +"</ul>"
+        +"<p><font color=rgb(100,100,100)>Cluet David<br>"
+        +"Research Ingeneer,PHD<br>"
+        +"<font color=rgb(77,172,174)>CNRS, ENS-Lyon, LBMC</p>"
+        );
+}//END WELCOME
+
+/*
+================================================================================
+*/
+
+function DisplayInfo(Message){
+showMessage("", "<html>"
+        +"<font size=+3>"
+        +"<h1><font color=rgb(77,172,174)>Find Curve Analysis</h1>"
+        +"<font size=+0>"
+        +"<font color=rgb(0,0,0)>"
+        +"<p>" + Message + "</p>"
+        );
+}//END DisplayInfo
 
 
 
