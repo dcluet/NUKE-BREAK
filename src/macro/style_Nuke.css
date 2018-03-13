@@ -1,0 +1,317 @@
+div#bloc_page
+{
+width: 900px;
+text-transform: none;
+font-weight:0pt;
+
+}
+
+div#tutelles
+{
+width: 1000px;
+display: block;
+
+}
+
+#CNRS, #ENS, #LBMC, #UCBL
+{
+    display: inline-block;
+    vertical-align: top;
+	margin: 20 0 75 75px;
+	
+}
+
+#UCBL
+{
+    width: 97px;
+	
+
+}
+
+#CNRS
+{
+    width: 100px;
+	
+
+}
+
+#ENS
+{
+    width: 289px;
+	
+	
+}
+
+#LBMC
+{
+    width: 149px;
+	
+}
+
+
+h1
+{
+color: rgb(49,133,156);
+font-family: Arial;
+text-transform: uppercase;
+font-size:16pt;
+text-align: left;
+margin: 20 54 20 54px;
+}
+
+h2
+{
+color: rgb(0,0,0);
+font-family: Arial;
+text-transform: uppercase;
+font-size:12pt;
+text-align: left;
+font-weight:bold;
+margin: 0 54 20 100px;
+}
+
+
+
+div#Description
+{
+color: rgb(100,100,100);
+font-family: Arial;
+font-size: 12pt;
+margin: 0 54 20 120px;
+text-align: left;
+text-transform: none;
+font-weight:0pt;
+}
+
+#Images
+{
+width: 1000px;
+display: block;
+
+
+margin: 0 54 54 100px;
+font-family: Arial;
+text-transform: none;
+
+font-style:italic
+
+}
+
+#Image1
+
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 885px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	text-transform: none;
+	font-family: Arial;
+	font-size:10pt;
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+	}
+
+#Image2 	
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 885px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	text-transform: none;
+	font-family: Arial;
+	font-size:10pt;
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+	}
+
+#Image2T 	
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 885px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	text-transform: none;
+	font-family: Arial;
+	font-size:10pt;
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+	}	
+	
+#Image3	
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 885px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	text-transform: none;
+	font-family: Arial;
+	font-size:10pt;
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+	}
+#Image3T
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 275px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	text-transform: none;
+	font-family: Arial;
+	font-size:10pt;
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+	}
+	
+#Image1:hover
+{
+	
+	border: 2px solid;
+	background-color: rgb(49,133,156);
+	border-color: rgb(0,0,0);
+	color:rgb(255,255,255);
+
+}
+
+#Image2:hover
+{
+	
+	border: 2px solid;
+	background-color: rgb(49,133,156);
+	border-color: rgb(0,0,0);
+	color:rgb(255,255,255);
+
+}
+
+#Image3:hover
+{
+	
+	border: 2px solid;
+	background-color: rgb(49,133,156);
+	border-color: rgb(0,0,0);
+	color:rgb(255,255,255);
+
+}
+
+em
+{
+color: rgb(49,133,156);
+font-family: Arial;
+font-size: 13pt;
+font-style:normal;
+font-weight:bold;
+}
+
+em:hover
+{
+
+color: rgb(0,0,0);
+font-size: 13pt;
+}
+
+
+
+
+table
+{
+	font-size:8pt;
+	
+	border: 1; 
+	border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+	
+	
+    
+}
+
+#Table1
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 275px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	
+	font-family: Arial;
+
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+
+}
+
+#Table2
+{
+    display: inline-block;
+    vertical-align: top;
+	width: 700px;
+	margin-top: 10px;
+	margin-left:10px;
+	margin-right:0px;
+	margin-bottom:10px;
+	
+	font-family: Arial;
+
+	text-align: center;
+	border: 2px solid;
+	background-color: rgb(225,225,225);
+	border-color: rgb(49,133,156);
+	padding: 5px;
+
+}
+
+
+td, th /* Mettre une bordure sur les td ET les th */
+{
+    border: 1px solid black;
+	padding: 5;
+	font-size:8pt;
+	text-align: center;
+	font-size:12pt;
+	
+}
+
+
+
+thead
+{
+background-color: rgb(49,133,156);
+color:rgb(255, 255,255);
+font-size:8pt;
+text-align: center;
+
+}
+
+

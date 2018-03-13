@@ -1,0 +1,5 @@
+macro "NUKE-BREAK"{
+runMacro(getDirectory("macros")+File.separator()+"NUKE-BREAK"+File.separator()+"Main.java");
+}
+
+//End_Nuke-Break

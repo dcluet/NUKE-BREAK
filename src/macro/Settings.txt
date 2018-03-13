@@ -1,0 +1,3 @@
+Classic Mitose	.tif	Mitose	50000	Infinity	Default	3.8	8	0.4	1	0.03	0.8	0.3	1
+Classic Meiose	.tif	Meiose	50000	Infinity	Default	3.8	8	0.4	1	0.03	0.8	0.3	1
+New	.lsm	Mitose	50000	Infinity	Default	3.8	8	0	1	0	1	0	1
