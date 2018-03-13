@@ -5,7 +5,7 @@ The `NUKE-BREAK` macro for the program ImageJ ([Schneider et al. 2012](https://w
 
 
 The macro processes all detected `.tif` files follows:
-1. The `DAPI` and `RAD-51` staining channels are automatically assigned using preexisting blue and red LUT.
+1. The `DAPI` and `RAD-51` staining channels are automatically assigned using preexisting BLUE and RED LUT.
 2. The noise of both channel is then independently removed using the [“substract background” function](http://ieeexplore.ieee.org/document/1654163/?reload=true).
 3. The `DAPI` channel is then used to detect the Gonade within the image by combining [Z projections](https://www.biotechniques.com/biotechniques/BiotechniquesJournal/supplements/2007/July/ImageJ-for-microscopy/biotechniques-42894.html) and the ["Huang" thresholding method](https://pdfs.semanticscholar.org/8906/64d6e7861253bd8c36d0e9079f96c9f22d67.pdf). A further analysis of the Gonad allows the automatic detection of its orientation and the position of its distal end. The position of every nuclei will be calculated using this reference point.
 4. Nuclei are then detected by thresholding, for every slice, the pixel values present within G using the “Default” algorithm. As a nucleus is present on several slices, all particles having the same centroid are removed except of the one with the largest area value.
@@ -21,7 +21,7 @@ For more details please refer to our publication.
 **Contributors**
 --
 
-||![CNRS Logo](src/doc/Logo_cnrs.jpg)![LBMC Logo](src/doc/Logo_LBMC.jpg)|![ENS Logo](src/doc/Logo_ens.jpg) |
+||![CNRS Logo](src/doc/Logo_cnrs.jpg) ![LBMC Logo](src/doc/Logo_LBMC.jpg)|![ENS Logo](src/doc/Logo_ens.jpg) |
 |-----------------------------|------------|------------|
 |**CLUET David**|[SIMBIO Team](http://www.ens-lyon.fr/LBMC/equipes/simbio/home?set_language=en&cl=en)|[david.cluet@ens-lyon.fr](david.cluet@ens-lyon.fr)|
 |**MICHAL Fanny**|[EPIGENETIC REGULATION DURING DEVELOPMENT Team](http://www.ens-lyon.fr/LBMC/equipes/EpiDev)     | |
