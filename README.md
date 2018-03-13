@@ -14,9 +14,9 @@ The macro processes all detected `.tif` files follows:
 
 For more details please refer to our publication.
 
-|![3D stack](src/doc/3D.jpg)|![Identified biggest slice](src/doc/Slice.jpg)|![Segments identification](src/doc/Identification.jpg)|![calculated Radius of curvature](src/doc/Segment.jpg)
-|-------------------------------------|-----------------------------------|-----------------------------------|-----------------------------------|
-|**ORIGINAL 3D CELL**   |**IDENTIFIED "BEST" SLICE**   |**AUTOMATED DETECTION OF THE SEGMENTS**   |**AUTOMATED CALCULATION OF THE RADIUS OF CURVATURE**   |
+|![Gonade](src/doc/Gonade.jpg)|![Initial vs Result](src/doc/Nucleus.jpg)|![Cumulative distribution](src/doc/Distribution.jpg)|
+|-------------------------------------|-----------------------------------|-----------------------------------|
+|**Detection of the gonade and nuclei**   |**Raw nucleus *vs* RAD-51 foci and chromatine detection**   |**Cumulative distribution of the foci along the gonade**|
 
 **Contributors**
 --
