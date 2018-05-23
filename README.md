@@ -4,19 +4,19 @@ Automated detection of nuclei and DNA damage in Caenorhabditis elegans germline
 The `NUKE-BREAK` macro for the program ImageJ ([Schneider et al. 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5554542/)) was developed specifically to detect RAD-51 foci within nuclei in the C.elegans gonad, but can be applied to the detect and count any type of round particles. The macro was designed to automatically detect and process batches of microscope stacks (.tif) acquisitions of this organ. To this end, key parameters for nuclei and foci detection (minimum and maximum surface and circularity) have been optimized for the mitotic and meiotic regions of the gonad.
 
 
-The macro processes all detected `.tif` files follows:
+The macro creates a listing of `.tif` stacks to analyze from a root folder and processes them as follows:
 1. The `DAPI` and `RAD-51` staining channels are automatically assigned using preexisting BLUE and RED LUT.
 2. The noise of both channel is then independently removed using the [“substract background” function](http://ieeexplore.ieee.org/document/1654163/?reload=true).
-3. The `DAPI` channel is then used to detect the Gonade within the image by combining [Z projections](https://www.biotechniques.com/biotechniques/BiotechniquesJournal/supplements/2007/July/ImageJ-for-microscopy/biotechniques-42894.html) and the ["Huang" thresholding method](https://pdfs.semanticscholar.org/8906/64d6e7861253bd8c36d0e9079f96c9f22d67.pdf). A further analysis of the Gonad allows the automatic detection of its orientation and the position of its distal end. The position of every nuclei will be calculated using this reference point.
-4. Nuclei are then detected by thresholding, for every slice, the pixel values present within G using the “Default” algorithm. As a nucleus is present on several slices, all particles having the same centroid are removed except of the one with the largest area value.
+3. The `DAPI` channel is then used to detect the Gonad within the image by combining [Z projections](https://www.biotechniques.com/biotechniques/BiotechniquesJournal/supplements/2007/July/ImageJ-for-microscopy/biotechniques-42894.html) and the ["Huang" thresholding method](https://pdfs.semanticscholar.org/8906/64d6e7861253bd8c36d0e9079f96c9f22d67.pdf). A further analysis of the Gonad allows the automatic detection of its orientation and the position of its distal end. The position of every nuclei will be calculated using this reference point.
+4. Nuclei are then detected by thresholding, for every slice, the pixel values present within the Gonad using the “Default” algorithm. As a nucleus is present on several slices, all particles having the same centroid are removed except of the one with the largest area value.
 5. `RAD-51` foci are then scored independently for each nucleus. In order to take into account the 3D shape of the nuclei, a Z projection is performed. `RAD-51` foci are then detected within the shape of the nucleus using the [“Max-Entropy” threshold method](https://www.sciencedirect.com/science/article/pii/0734189X85901252).
-6. Finnaly, the program collects the position and size of all nuclei and foci to generate cumulative distribution curves over distance from the extremity of the gonad .
+6. Finally, the program collects the position and size of all nuclei and foci to generate cumulative distribution curves over distance from the extremity of the gonad.
 
 For more details please refer to our publication.
 
-|![Gonade](src/doc/Gonade.jpg)|![Initial vs Result](src/doc/Nucleus.jpg)|![Cumulative distribution](src/doc/Distribution.jpg)|
+|![Gonad](src/doc/Gonad.jpg)|![Initial vs Result](src/doc/Nucleus.jpg)|![Cumulative distribution](src/doc/Distribution.jpg)|
 |-------------------------------------|-----------------------------------|-----------------------------------|
-|**Detection of the gonade and nuclei**   |**Raw nucleus *vs* RAD-51 foci and chromatine detection**   |**Cumulative distribution of the foci along the gonade**|
+|**Detection of the gonad and nuclei**   |**Raw nucleus *vs* RAD-51 foci and chromatine detection**   |**Cumulative distribution of the foci along the gonad**|
 
 **Contributors**
 --
